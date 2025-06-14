@@ -1,0 +1,2 @@
+### User Goal
+We are launching a new product called 'SynthWave AI', an AI-powered music composition tool. Please create a complete marketing launch campaign for it. The campaign should include a target audience profile, three distinct social media posts for Twitter, and the text for an announcement email.

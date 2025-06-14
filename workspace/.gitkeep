@@ -1,0 +1,10 @@
+# This file ensures the workspace directory structure is preserved in git
+# while keeping the actual workspace content out of version control
+
+# Workspace directories should contain:
+# - execution_state.md (during active executions)  
+# - User data and generated outputs
+# - Temporary files and cache
+
+# These are typically excluded from version control
+# but the directory structure itself should be maintained
