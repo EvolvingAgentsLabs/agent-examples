@@ -1,6 +1,6 @@
-# LLMUNIX Agentic Examples
+# LLMunix: Pure Markdown Operating System Examples
 
-Welcome to the official examples repository for **LLMUNIX**, the document-centric operating system powered by the [Evolving Agents Labs Framework Core](https://github.com/EvolvingAgentsLabs/framework-core).
+Welcome to the official examples repository for **LLMunix**, the Pure Markdown Operating System where everything is either an agent or tool defined in markdown documents. Claude Code serves as the runtime engine interpreting these markdown specifications.
 
 This repository contains a curated collection of high-impact examples demonstrating the core power of the framework: **providing a simple, natural language goal and watching the OS autonomously create the entire agent and tool toolchain needed to accomplish it.**
 
@@ -19,35 +19,47 @@ This repository is designed to be run using **Claude Code**, which acts as the r
    ```
 4. This will open the Claude Code console interface
 
-### Step 1: Load the LLMUNIX Framework
+### Step 1: Boot LLMunix
 
-Once you're in the Claude Code console, you need to load the LLMUNIX operating system framework.
-
-**Action:**
-1. Copy the **entire contents** of the `CLAUDE.md` file from this repository
-2. Paste it directly into the Claude Code console as your first command
-3. Press Enter to execute
-
-Claude Code will acknowledge that it has loaded the LLMUNIX project and is ready to act as the operating system runtime.
-
-### Step 2: Choose and Run a Scenario
-
-Each example in the `examples/` directory contains a `scenario.md` file with a specific user goal to demonstrate LLMUNIX capabilities.
+Once you're in the Claude Code console, you need to boot the LLMunix operating system framework.
 
 **Action:**
-1. Choose an example, for instance, `01_Legal_Contract_Analysis`
-2. Open the `examples/01_Legal_Contract_Analysis/scenario.md` file
-3. Copy the user goal from that file
-4. In the Claude Code console, paste the goal prefixed with the `llmunix>` prompt
-
-**Example Command:**
+Simply type the boot command:
 ```
-llmunix> I have a new service agreement from a vendor. Please act as a paralegal, review the attached contract, and give me a summary of the key terms, including the parties involved, the effective date, the term length, payment details, and any potential risks or non-standard clauses I should be aware of. The contract text is: """SERVICE AGREEMENT This Agreement is made effective as of January 1, 2025..."""
+boot llmunix
+```
+
+This will display the LLMunix welcome screen:
+```
+██╗     ██╗     ███╗   ███╗██╗   ██╗███╗   ██╗██╗██╗  ██╗
+██║     ██║     ████╗ ████║██║   ██║████╗  ██║██║╚██╗██╔╝
+██║     ██║     ██╔████╔██║██║   ██║██╔██╗ ██║██║ ╚███╔╝ 
+██║     ██║     ██║╚██╔╝██║██║   ██║██║╚██╗██║██║ ██╔██╗ 
+███████╗███████╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║██║██╔╝ ██╗
+╚══════╝╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+                Pure Markdown Operating System v1.0
+```
+
+**Boot automatically cleans the workspace directory to ensure a fresh execution environment.**
+
+### Step 2: Execute Commands
+
+Use the LLMunix command format to execute tasks. Choose from the examples below or create your own.
+
+**Example Commands:**
+```bash
+llmunix execute: "Monitor 5 tech news sources (TechCrunch, Ars Technica, Hacker News, MIT Tech Review, Wired), extract trending topics, identify patterns, and generate a weekly intelligence briefing"
+
+llmunix execute: "Get live content from https://huggingface.co/blog and create a research summary"
+
+llmunix simulate: "Research task workflow for fine-tuning dataset"
+
+llmunix execute: "I have a new service agreement from a vendor. Please act as a paralegal, review the attached contract, and give me a summary of the key terms, including the parties involved, the effective date, the term length, payment details, and any potential risks or non-standard clauses I should be aware of."
 ```
 
 ### Step 3: Observe the Autonomous Workflow
 
-Claude Code, running LLMUNIX, will now perform the entire task autonomously. You will observe it:
+Claude Code, running LLMunix, will now perform the entire task autonomously. You will observe it:
 
 1. **Analyze the Goal:** Parse and understand the specific requirements (legal analysis in this case)
 2. **Consult Smart Memory:** Check for relevant past experiences and learned patterns
@@ -82,7 +94,7 @@ ls workspace/
 - Use `ls` to explore the directory structure
 - Use `cat` to read file contents  
 - The `workspace/` directory will contain all generated outputs
-- LLMUNIX uses real Claude Code tools for actual file operations
+- LLMunix uses real Claude Code tools for actual file operations
 - All tool executions are logged for transparency
 
 ## Available Examples
@@ -94,7 +106,7 @@ ls workspace/
 ## Key Features Demonstrated
 
 ### Zero-to-Tool Capability
-Watch LLMUNIX autonomously generate specialized tools on-demand:
+Watch LLMunix autonomously generate specialized tools on-demand:
 - **Legal Analysis Tools** for contract review and risk assessment
 - **Marketing Tools** for campaign generation and content creation  
 - **Healthcare Tools** for HIPAA-compliant patient processing
@@ -124,7 +136,7 @@ You can create your own scenarios by:
 4. Running the scenario through LLMUNIX
 
 ### Extending the Framework
-LLMUNIX learns and evolves:
+LLMunix learns and evolves:
 - New tools and agents are automatically registered
 - The SmartMemory system captures execution patterns
 - Future runs leverage learned optimizations
@@ -132,7 +144,7 @@ LLMUNIX learns and evolves:
 
 ## Contributing
 
-We welcome contributions to expand the LLMUNIX examples! Here's how you can contribute:
+We welcome contributions to expand the LLMunix examples! Here's how you can contribute:
 
 ### Adding New Examples
 
@@ -167,9 +179,9 @@ We welcome contributions to expand the LLMUNIX examples! Here's how you can cont
    ```
 
 5. **Test Your Example**
-   - Load LLMUNIX in Claude Code using the `CLAUDE.md` file
+   - Boot LLMunix in Claude Code using `boot llmunix`
    - Run your scenario to ensure it works correctly
-   - Verify that LLMUNIX creates appropriate tools and agents
+   - Verify that LLMunix creates appropriate tools and agents
    - Check that deliverable files are generated in `workspace/`
 
 6. **Submit a Pull Request**
@@ -192,7 +204,7 @@ We welcome contributions to expand the LLMUNIX examples! Here's how you can cont
 
 **Good Examples Should:**
 - Demonstrate real-world, practical use cases
-- Require LLMUNIX to create multiple tools/agents
+- Require LLMunix to create multiple tools/agents
 - Show complex multi-step workflows
 - Include realistic test data or scenarios
 - Generate meaningful deliverable outputs
@@ -217,10 +229,10 @@ Contributors will be:
 - Listed in project acknowledgments
 - Credited in example documentation
 - Invited to collaborate on future developments
-- Recognized for expanding LLMUNIX capabilities
+- Recognized for expanding LLMunix capabilities
 
 ## Acknowledgements
 
 *   Original Concept Contributors: [Matias Molinas](https://github.com/matiasmolinas) and [Ismael Faro](https://github.com/ismaelfaro).
 
-*LLMUNIX: Where simulation meets reality, and training data drives the future of autonomous AI.*
+*LLMunix: Where simulation meets reality, and training data drives the future of autonomous AI.*
