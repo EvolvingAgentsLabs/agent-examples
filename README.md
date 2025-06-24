@@ -1,8 +1,12 @@
-# LLMunix: Pure Markdown Operating System Examples
+# Agent Examples
 
-Welcome to the official examples repository for **LLMunix**, the Pure Markdown Operating System where everything is either an agent or tool defined in markdown documents. Claude Code serves as the runtime engine interpreting these markdown specifications.
+Real-world agent implementations showcasing practical applications of adaptive AI systems and autonomous task execution patterns, directly derived from LLMunix's proven capabilities.
 
-This repository contains a curated collection of high-impact examples demonstrating the core power of the framework: **providing a simple, natural language goal and watching the OS autonomously create the entire agent and tool toolchain needed to accomplish it.**
+## Overview
+
+This repository contains production-ready agent examples that demonstrate the practical application of LLMunix's adaptive behavior management and sentient state architecture. Each example is derived from real-world scenarios tested in LLMunix's execution environment.
+
+**Key Innovation**: These examples showcase **Adaptive Behavior Management** - where agents dynamically modify their decision-making processes based on user sentiment, task context, and historical learning patterns.
 
 ## How to Run These Examples
 
@@ -97,11 +101,40 @@ ls workspace/
 - LLMunix uses real Claude Code tools for actual file operations
 - All tool executions are logged for transparency
 
-## Available Examples
+## Featured Examples with Adaptive Behavior
 
--   **[01_Legal_Contract_Analysis](./examples/01_Legal_Contract_Analysis/):** An agent that acts as a paralegal, analyzing a service agreement to extract key terms, dates, and potential risks.
--   **[02_Marketing_Campaign_Generator](./examples/02_Marketing_Campaign_Generator/):** An agent that acts as a marketing assistant, creating a complete multi-channel marketing campaign from a simple product description.
--   **[03_Healthcare_Patient_Onboarding](./examples/03_Healthcare_Patient_Onboarding/):** An agent that simulates a HIPAA-compliant patient intake process, generating forms and summarizing patient information.
+### 🔍 Research Intelligence Agent
+**Based on**: LLMunix's RealWorld_Research_Task scenario  
+**Adaptive Features**: 
+- **Time Pressure Detection**: Automatically switches to speed_and_clarity mode when urgency is detected
+- **Source Failure Recovery**: Graceful degradation when web sources are unavailable  
+- **Memory-Driven Strategy**: Consults past research patterns for optimal approach selection
+
+```bash
+llmunix execute: "Monitor 5 tech news sources, extract trending topics, and generate intelligence briefing"
+# System adapts constraints based on API limitations, maintains intelligence value
+```
+
+### ⚖️ Legal Contract Analysis Agent  
+**Enhanced from**: `examples/01_Legal_Contract_Analysis/`  
+**Adaptive Features**:
+- **Urgency Awareness**: Adapts analysis depth based on detected time constraints
+- **Risk Tolerance Adjustment**: Modifies thoroughness based on contract complexity
+- **User Sentiment Response**: Adjusts communication style for stressed vs. confident users
+
+### 📈 Marketing Campaign Generator
+**Enhanced from**: `examples/02_Marketing_Campaign_Generator/`  
+**Adaptive Features**:
+- **Budget Consciousness**: Dynamically adjusts campaign scope based on cost constraints
+- **Brand Voice Learning**: Adapts creative style based on user feedback patterns
+- **Performance Memory**: Applies successful campaign patterns from past executions
+
+### 🏥 Healthcare Patient Onboarding  
+**Enhanced from**: `examples/03_Healthcare_Patient_Onboarding/`  
+**Adaptive Features**:
+- **Compliance Strictness**: Adjusts error tolerance for HIPAA-critical processes
+- **Patient Comfort Detection**: Modifies interaction style based on patient anxiety levels
+- **Process Efficiency**: Optimizes workflow based on successful onboarding patterns
 
 ## Key Features Demonstrated
 
